@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .underline-effect {
+    @apply relative before:absolute before:bottom-0 before:left-0 before:bg-black before:w-[40%] before:h-[1.2px] hover:before:w-full before:transition-all before:duration-200;
+  }
+  .shadow-overflow {
+    @apply absolute inset-0 bg-gradient-to-b from-[#ffffff00] to-[#00000050];
+  }
+}
